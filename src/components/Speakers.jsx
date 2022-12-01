@@ -13,7 +13,6 @@ const Speakers = () => {
               {/* <h3>Our Hardworking <span>Team</span></h3> */}
               <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
             </div>
-
             <div class="row">
 
               <div class="col-lg-3 col-md-6 d-flex align-items-stretch">

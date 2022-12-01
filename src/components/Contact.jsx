@@ -1,6 +1,15 @@
 import React from "react";
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
+
+  function sendEmail(e){
+    e.preventDefault();
+    emailjs.sendForm("service_mwim6xj","template_zcp7n7f",e.target,'user_UVUwRDP32CPM2naPvL9MS').then((res)=>
+    console.log(res)).catch((e)=>console.log(e))
+    e.target.reset()
+    alert("Thank you contact us")
+  }
   return (
     <>
       <section id="contact" class="contact">
@@ -21,7 +30,7 @@ const Contact = () => {
                   <div class="info-box">
                     <i class="bx bx-map"></i>
                     <h3>Our Address</h3>
-                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <p>NH 62, Surpura Bypass Road, Karwar,Rajasthan 342030</p>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -51,9 +60,7 @@ const Contact = () => {
 
             <div class="col-lg-6">
               <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
+              onSubmit={sendEmail}
                 class="php-email-form"
               >
                 <div class="row">
