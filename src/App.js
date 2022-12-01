@@ -19,15 +19,12 @@ const App = () => {
     setTimeout(() => setSpinner(false), 9000)
   }, []);
 
-  window.onload = function () {
-    document.getElementById('autovideo').play()
-   }
-   
+
   return (
     <>
       {spinner ? (
         <div className="video-container">
-          <video loop  width="100%" id="autovideo" >
+          <video loop muted autoPlay  width="100%" id="autovideo" >
             <source  src={video} type="video/mp4"/>
           </video>
         </div>
