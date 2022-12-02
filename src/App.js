@@ -40,6 +40,15 @@ const App = () => {
             </>
             )
       }
+      {/* <Navbar />
+      <main id="main">
+        <Register />
+        <About />
+        <Speakers />
+        <Team />
+        <Contact />
+      </main>
+      <Footer /> */}
     </>
   )
 }

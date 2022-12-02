@@ -29,14 +29,14 @@ const Contact = () => {
                 <div class="col-md-12">
                   <div class="info-box">
                     <i class="bx bx-map"></i>
-                    <h3>Our Address</h3>
+                    <h3 class="text-white">Our Address</h3>
                     <p>NH 62, Surpura Bypass Road, Karwar,Rajasthan 342030</p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="info-box mt-4">
                     <i class="bx bx-envelope"></i>
-                    <h3>Email Us</h3>
+                    <h3  class="text-white">Email Us</h3>
                     <p>
                       info@example.com
                       <br />
@@ -47,7 +47,7 @@ const Contact = () => {
                 <div class="col-md-6">
                   <div class="info-box mt-4">
                     <i class="bx bx-phone-call"></i>
-                    <h3>Call Us</h3>
+                    <h3  class="text-white">Call Us</h3>
                     <p>
                       +1 5589 55488 55
                       <br />

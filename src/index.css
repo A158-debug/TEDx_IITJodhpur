@@ -10,7 +10,8 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: white;
+  background-color: #1C1C1C;
 }
 
 a {
@@ -37,6 +38,25 @@ h6 {
   margin-left: 10px;
 }
 
+/* .fixed-image {
+position: relative;
+} */
+/* .fixed-image div{
+  background:white;
+  border:1px solid white !important;
+  height:100vh;
+  width:100%;
+  background:transparent !important;
+  position: absolute;
+  top:100px;
+  display:flex;
+
+}
+.fixed-image h1{
+justify-content:center;
+align-items:center; 
+
+} */
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -83,10 +103,11 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  /* background: #fff; */
+  background:black;
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 #header.header-scrolled {
@@ -103,7 +124,8 @@ h6 {
 }
 
 #header .logo a {
-  color: #111111;
+  /* color: #111111; */
+  color: white;
 }
 
 #header .logo a span {
@@ -174,6 +196,7 @@ h6 {
   font-size: 15px;
   font-weight: 600;
   color: #111111;
+  color: white;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -317,6 +340,7 @@ h6 {
   padding: 10px 20px;
   font-size: 15px;
   color: #111111;
+  color: white;
 }
 
 .navbar-mobile a:hover,
@@ -374,6 +398,8 @@ h6 {
   background-size: cover;
   position: relative;
   padding-top: 82px;
+  /* filter: brightness(50%); */
+  /* filter: grayscale(100%); */
 }
 
 #hero:before {
@@ -457,12 +483,13 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 42px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: red;
 }
 
 .section-title h2::after {
@@ -478,6 +505,7 @@ section {
 
 .section-title p {
   margin-bottom: 0;
+  
 }
 
 .section-bg {
@@ -488,6 +516,8 @@ section {
 .section-bg:before {
   content: "";
   background: #1b1b1b;
+
+  background:black;
   position: absolute;
   bottom: 60px;
   top: 60px;
@@ -893,6 +923,7 @@ section {
 
 .portfolio .portfolio-wrap img {
   transition: all ease-in-out 0.3s;
+  filter: grayscale(100%);
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
@@ -1259,6 +1290,10 @@ section {
 .team .member .member-img {
   position: relative;
   overflow: hidden;
+  
+}
+.team img{
+  filter: grayscale(100%);
 }
 
 .team .member .social {
@@ -1332,8 +1367,9 @@ section {
 --------------------------------------------------------------*/
 .contact .info-box {
   color: #444444;
+  color: white;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px rgba(116, 116, 117, 0.29);
   padding: 30px 0 32px 0;
   border-radius: 4px;
 }
@@ -1361,7 +1397,7 @@ section {
 }
 
 .contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px rgba(116, 116, 117, 0.29);
   padding: 30px;
   border-radius: 4px;
 }
@@ -1980,11 +2016,15 @@ section {
   color: #fff;
   font-size: 14px;
   background: #111111;
+  background:black;
+ 
+
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
   background: #1b1b1b;
+  background:black;
 }
 
 #footer .footer-top .footer-contact {

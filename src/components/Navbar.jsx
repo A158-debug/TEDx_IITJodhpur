@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../assets/img/logo-black.png';
+import logo from '../assets/img/logo-white.png';
 
 const Navbar = () => {
   const onToggle = () => {
@@ -29,11 +29,9 @@ const Navbar = () => {
               {/* TED<sup>x</sup>{" "}
               <span style={{ color: "Black" }}>IIT Jodhpur.</span> */}
               <img src={logo} class="img-fluid" alt="logo"></img>
-              <p class="logo_underx">
-                x={" "}
-                <span style={{ color: "Black", }}>
-                  independently organized TED event
-                </span>
+              <p class="logo_underx text-white">
+                x=  independently organized <span  style={{color: "red"}}> TED </span>
+                event
               </p>
             </a>
           </h1>
@@ -52,7 +50,7 @@ const Navbar = () => {
           <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
               <li onClick={ToggleButton}>
-                <a class="nav-link scrollto active" href="#hero">
+                <a class="nav-link scrollto " href="#hero">
                   Home
                 </a>
               </li>
@@ -97,7 +95,7 @@ const Navbar = () => {
         <div class="container" data-aos="zoom-out" data-aos-delay="100">
           <div class="row">
             <div class="col-xl-8">
-              <h1>Welcome to TEDx IIT Jodhpur</h1>
+              <h1>Welcome to <span style={{color: 'red'}}>TEDx </span>IIT Jodhpur</h1>
               <h2>
                Let's come together on a journey beyond words 
               </h2>

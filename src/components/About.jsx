@@ -1,7 +1,7 @@
 import React from "react";
 import tabs1 from '../assets/img/tabs-5.jpg'
 import tabs2 from '../assets/img/tabs-6.jpg'
-// import herobg2 from '../assets/img/herobg2.jpg'
+import herobg2 from '../assets/img/herobg2.jpg'
 const About = () => {
   return (
     <>
@@ -10,7 +10,7 @@ const About = () => {
           <ul class="nav nav-tabs row d-flex">
             <li class="nav-item col-3">
               <a
-                class="nav-link active show"
+                class="nav-link active show text-white"
                 data-bs-toggle="tab"
                 data-bs-target="#tab-1"
                 href="./"
@@ -23,7 +23,7 @@ const About = () => {
             </li>
             <li class="nav-item col-3">
               <a
-                class="nav-link"
+                class="nav-link text-white"
                 data-bs-toggle="tab"
                 data-bs-target="#tab-2"
                 href="./"
@@ -34,18 +34,6 @@ const About = () => {
                 </h4>
               </a>
             </li>
-            {/* <li class="nav-item col-3">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3" href="./">
-                  <i class="ri-sun-line"></i>
-                  <h4 class="d-none d-lg-block">Pariatur explica nitro dela</h4>
-                </a>
-              </li>
-              <li class="nav-item col-3">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4" href="./">
-                  <i class="ri-store-line"></i>
-                  <h4 class="d-none d-lg-block">Nostrum qui dile node</h4>
-                </a>
-              </li> */}
           </ul>
 
           <div class="tab-content">
@@ -124,6 +112,7 @@ const About = () => {
           </div>
         </div>
       </section>
+
       <section id="about" class="about section-bg">
         <div class="container" data-aos="fade-up">
           <div class="row no-gutters">
@@ -192,8 +181,9 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* <section>  
+      {/* <section className="fixed-image">  
           <img src={herobg2} alt="" className="img-fluid"/>
+          <div className=""><h1> Be with us</h1></div>
       </section> */}
     </>
   );

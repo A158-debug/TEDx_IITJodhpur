@@ -36,7 +36,7 @@ const Team = () => {
       <section id="portfolio" class="portfolio">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Our Team</h2>
+            <h2 style={{color:'red'}}>Our Team</h2>
             <p>
               Magnam dolores commodi suscipit. Necessitatibus eius consequatur
               ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam

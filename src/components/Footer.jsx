@@ -77,11 +77,7 @@ const Footer = () => {
           <div class="me-md-auto text-center text-md-star ">
             <div class="copyright">
               &copy; Copyright{" "}
-              <strong>
-                <span>
-                  TED<sup>x</sup>IIT Jodhpur
-                </span>
-              </strong>
+              <strong><span> TED<sup>x</sup>IIT Jodhpur</span></strong>
             </div>
             <div class="credits text-center">
               Designed by{" "}
