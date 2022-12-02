@@ -9,8 +9,6 @@ import Register from './components/Register'
 import video from './assets/TEDxvideo.mp4'
 
 
-
-
 const App = () => {
   const [spinner, setSpinner] = useState(false);
 
@@ -23,13 +21,13 @@ const App = () => {
   return (
     <>
       {spinner ? (
-        <div className="video-container">
+        <>
           <video loop muted autoPlay  width="100%" id="autovideo" >
             <source  src={video} type="video/mp4"/>
           </video>
-        </div>
+        </>
             ) : (
-            <div>
+            <>
               <Navbar />
               <main id="main">
                 <Register />
@@ -39,11 +37,11 @@ const App = () => {
                 <Contact />
               </main>
               <Footer />
-            </div>
+            </>
             )
       }
-          </>
-          )
+    </>
+  )
 }
 
-          export default App
+export default App

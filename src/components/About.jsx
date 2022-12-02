@@ -1,7 +1,7 @@
 import React from "react";
 import tabs1 from '../assets/img/tabs-5.jpg'
 import tabs2 from '../assets/img/tabs-6.jpg'
-import herobg2 from '../assets/img/herobg2.jpg'
+// import herobg2 from '../assets/img/herobg2.jpg'
 const About = () => {
   return (
     <>
