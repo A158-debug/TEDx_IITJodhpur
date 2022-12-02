@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <>
-      {spinner ? (
+      {/* {spinner ? (
         <>
           <video loop muted autoPlay  width="100%" id="autovideo" >
             <source  src={video} type="video/mp4"/>
@@ -39,8 +39,8 @@ const App = () => {
               <Footer />
             </>
             )
-      }
-      {/* <Navbar />
+      } */}
+      <Navbar />
       <main id="main">
         <Register />
         <About />
@@ -48,7 +48,7 @@ const App = () => {
         <Team />
         <Contact />
       </main>
-      <Footer /> */}
+      <Footer />
     </>
   )
 }

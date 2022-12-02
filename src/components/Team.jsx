@@ -1,24 +1,40 @@
 import React, {useState} from "react";
-import portfolio_1 from "../assets/img/portfolio/portfolio-1.jpg";
-import portfolio_2 from "../assets/img/portfolio/portfolio-2.jpg";
-import portfolio_3 from "../assets/img/portfolio/portfolio-3.jpg";
-import portfolio_4 from "../assets/img/portfolio/portfolio-4.jpg";
-import portfolio_5 from "../assets/img/portfolio/portfolio-5.jpg";
-import portfolio_6 from "../assets/img/portfolio/portfolio-6.jpg";
-import portfolio_7 from "../assets/img/portfolio/portfolio-7.jpg";
-import portfolio_8 from "../assets/img/portfolio/portfolio-8.jpg";
-import portfolio_9 from "../assets/img/portfolio/portfolio-9.jpg";
+// import portfolio_1 from "../assets/img/portfolio/portfolio-1.jpg";
+// import portfolio_2 from "../assets/img/portfolio/portfolio-2.jpg";
+// import portfolio_3 from "../assets/img/portfolio/portfolio-3.jpg";
+// import portfolio_4 from "../assets/img/portfolio/portfolio-4.jpg";
+// import portfolio_5 from "../assets/img/portfolio/portfolio-5.jpg";
+// import portfolio_6 from "../assets/img/portfolio/portfolio-6.jpg";
+// import portfolio_7 from "../assets/img/portfolio/portfolio-7.jpg";
+// import portfolio_8 from "../assets/img/portfolio/portfolio-8.jpg";
+// import portfolio_9 from "../assets/img/portfolio/portfolio-9.jpg";
+
+import Abhishek from '../assets/img/portfolio/AbhishekKumar.png';
+import Deepika from '../assets/img/portfolio/DeepikaGupta.jpeg';
+import Dheemant from '../assets/img/portfolio/Dheemant.jpeg';
+import Harshit from '../assets/img/portfolio/HarshitMakhijani.jpeg';
+import Inder from '../assets/img/portfolio/IndermohanKaur.jpeg';
+import Kartik from '../assets/img/portfolio/KartikChoudhary.jpeg';
+import Prachiti from '../assets/img/portfolio/PrachitiDad.jpeg';
+import Shivangi from '../assets/img/portfolio/ShivangiMadhavi.jpeg';
+import Yash from '../assets/img/portfolio/YashRuhatiya.jpg';
+import Chakshu from '../assets/img/portfolio/Chakshu.jpeg'
+import Aman from '../assets/img/portfolio/Aman.jpeg';
 
 const Team_cards = [
-  { img: portfolio_1, info: "ALL", id:1 },
-  { img: portfolio_2, info: "HEAD" , id:2},
-  { img: portfolio_3, info: "WEB" , id:3},
-  { img: portfolio_4, info: "ALL" , id:4},
-  { img: portfolio_5, info: "ALL", id:5 },
-  { img: portfolio_6, info: "HEAD", id:6 },
-  { img: portfolio_7, info: "HEAD", id:7 },
-  { img: portfolio_8, info: "ALL" , id:8},
-  { img: portfolio_9, info: "WEB" , id:9 },
+  { img: Kartik, info: "ORGANIZER", id:6 },
+  { img: Yash, info: "ORGANIZER" , id:9 },
+  { img: Abhishek, info: "HEAD", id:1 },
+  { img: Deepika, info: "HEAD" , id:2},
+  { img: Dheemant, info: "HEAD" , id:3},
+  { img: Harshit, info: "HEAD" , id:4},
+  { img: Inder, info: "HEAD", id:5 },
+ 
+  { img: Prachiti, info: "HEAD", id:7 },
+  { img: Shivangi, info: "HEAD" , id:8},
+  
+  { img: Aman, info: "HEAD" , id:10 },
+  { img: Chakshu, info: "HEAD" , id:11 },
 ];
 
 
@@ -27,9 +43,12 @@ const Team = () => {
 
   const [items, setItems] = useState(Team_cards)
   const filterItem = (e)=>{
-    console.log(items)
-    var updatedItem = Team_cards.filter((curr)=> {return curr.info === e})
-    setItems(updatedItem)
+    if(e === 'ALL') setItems(Team_cards)
+    else {
+      var updatedItem = Team_cards.filter((curr)=> {return curr.info === e})
+      setItems(updatedItem)
+    }
+    
  }
   return (
     <>
@@ -48,9 +67,8 @@ const Team = () => {
             <div class="col-lg-12 d-flex justify-content-center">
               <ul id="portfolio-flters">
                 <li onClick={()=>filterItem('ALL')}>All</li>
-                <li  onClick={()=>filterItem('HEAD')}>Head</li>
-                {/* <li onClick={()=>filterItem('HEAD')}>Core Members</li> */}
-                <li onClick={()=>filterItem('WEB')}>Web</li>
+                <li  onClick={()=>filterItem('ORGANIZER')}>Organizer</li>
+                <li onClick={()=>filterItem('HEAD')}>Head</li>
               </ul>
             </div>
           </div>
@@ -62,8 +80,8 @@ const Team = () => {
           >
             {items.map((e) => (
               <div class="col-lg-4 col-md-6 portfolio-item filter-web" key = {e.id}>
-                <div class="portfolio-wrap">
-                  <img src={e.img} class="img-fluid" alt="" />
+                <div class="portfolio-wrap d-flex justify-content-center">
+                  <img src={e.img} class="img-fluid" alt=""  />
                   <div class="portfolio-info">
                     <h4>Web 3</h4>
                     <p>Web</p>

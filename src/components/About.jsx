@@ -181,10 +181,11 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* <section className="fixed-image">  
-          <img src={herobg2} alt="" className="img-fluid"/>
-          <div className=""><h1> Be with us</h1></div>
-      </section> */}
+      <section className="fixed-image mt-5">  
+          {/* <img src={herobg2} alt="" className="img-fluid"/> */}
+          <h1> Be with us </h1>
+        
+      </section>
     </>
   );
 };
