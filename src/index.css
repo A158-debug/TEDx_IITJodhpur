@@ -863,7 +863,7 @@ section {
   text-decoration: underline;
 }
 
-.services .icon-box .icon-box:hover h4 a {
+.services .icon-ox .icon-box:hover h4 a {
   color: #e03a3c;
 }
 
@@ -876,18 +876,18 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+/* .portfolio .portfolio-item {
   margin-bottom: 30px;
-}
+} */
 
-.portfolio #portfolio-flters {
+/* .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
-}
+} */
 
-.portfolio #portfolio-flters li {
+/* .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 15px 10px 15px;
@@ -900,9 +900,9 @@ section {
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
   border-radius: 3px;
-}
+} */
 
-.portfolio #portfolio-flters li:hover,
+/* .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
   background: #e03a3c;
@@ -910,20 +910,20 @@ section {
 
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
-}
+} */
 
-.portfolio .portfolio-wrap {
+/* .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  /* background: rgba(17, 17, 17, 0.6); */
+  background: rgba(17, 17, 17, 0.6);
 
-}
-
+} */
+/* 
 .portfolio .portfolio-wrap::before {
   content: "";
-  /* background: rgba(17, 17, 17, 0.6); */
+  background: rgba(17, 17, 17, 0.6);
   position: absolute;
   left: 0;
   right: 0;
@@ -932,11 +932,31 @@ section {
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
+} */
+
+.team-img img{
+ height:180px;
+ width:180px;
+ object-fit:cover ;
+ margin: 12px;
+ border-radius: 5px;
 }
 
-.portfolio .portfolio-wrap img {
+.team-img .head-name{
+  font-size:17px;
+  margin: 0;
+  font-weight:400;
+}
+
+.team-img .head-designation{
+  margin: 0px;
+  font-size:12px;
+  color: rgba(255, 255, 255, 0.584);
+}
+
+/* .portfolio .portfolio-wrap img {
   transition: all ease-in-out 0.3s;
-  /* filter: grayscale(100%); */
+  filter: grayscale(100%);
    max-height: 200px;
    width: 200px;
    border-radius:5px;
@@ -997,17 +1017,17 @@ section {
 }
 
 .portfolio .portfolio-wrap:hover img {
-  /* transform: scale(1.2); */
+  transform: scale(1.2);
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+/* .portfolio-details {
   padding-top: 40px;
 }
 
@@ -1067,7 +1087,7 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Testimonials
