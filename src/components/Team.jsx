@@ -59,14 +59,14 @@ const Team = () => {
           >
             {items.map((e) => (
               <div
-                class="col-lg-3 col-md-6 portfolio-item filter-web"
+                class="col-lg-3 col-md-6 portfolio-item filter-web gap-3"
                 key={e.id}
               >
-                <div class="card" style={{ width: "18rem" }}>
+                <div class="card" >
                   <img src={e.img} class="card-img-top" alt="..." style={{maxHeight: "370px"}}/>
                   <div class="card-body" style={{color: "black"}}>
                   <strong> <p className="">{e.name}</p></strong>
-                   <p style={{margin:'2px', fontWeight:'400'}}>{e.info}</p>
+                   <p style={{margin:'2px', fontWeight:'400', fontSize:'15px'}}>{e.info}</p>
                   </div>
                 </div>
               </div>
