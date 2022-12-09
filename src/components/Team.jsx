@@ -42,14 +42,22 @@ const Team = () => {
   return (
     <>
       <section id="portfolio" class="portfolio">
-        <div className="container text-center" data-aos="fade-up">
+        <section className="team-fixed-image fixed-image-heading">
+          <div className="text-white">
+            <h1 className="my-4 text-center">Meet Our <span style={{ color: "red" }}>TEDx</span> IIT Jodhpur Team</h1>
+            <h2 className="p-5 my-3 text-center blur-fixed-image">
+              Our team do everything from speaker selection, event coordination
+              and volunteer management to marketing, fundraising, and graphic
+              design. Our job is to find incredible ideas in and around our
+              community, and to help speakers’ ideas develop into their best
+              versions.
+            </h2>
+          </div>
+        </section>
+
+        <div className="container text-center mt-5" data-aos="fade-up">
           <div class="section-title">
             <h2 style={{ color: "red" }}>Our Team</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-            </p>
           </div>
 
           <div className="row team-img" data-aos="fade-up" data-aos-delay="200">
@@ -62,6 +70,7 @@ const Team = () => {
             ))}
           </div>
         </div>
+
       </section>
     </>
   );
