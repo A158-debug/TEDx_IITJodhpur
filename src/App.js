@@ -52,6 +52,7 @@ const App = () => {
             <Route path="/events" element={<Team />} />
             <Route path="/gallery" element={<Team />} />
             <Route path="/speakers" element={<Speakers />} />
+            <Route path="/contacts" element={<Speakers />} />
           </Routes>
         </main>
         <Footer />

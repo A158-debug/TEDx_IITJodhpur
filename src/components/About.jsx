@@ -8,11 +8,11 @@ const About = () => {
       <section className="about-fixed-image fixed-image-heading mt-5">
         <div>
           <h1 className="my-4 text-center"> About <span style={{color: "red"}}>TEDx</span>  IIT Jodhpur </h1>
-          <h2 className="p-5 my-3 text-center blur-fixed-image">In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organised events that bring people together to share a TED-like experience. </h2>  
+          <h2 className="text-center blur-fixed-image">In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organised events that bring people together to share a TED-like experience. </h2>  
         </div>
       </section>
-
       
+
       <section className="mt-5">
         <div className="container about-heading">
           <div className="row text-center ">
@@ -43,6 +43,8 @@ const About = () => {
             <h1 className="text-center my-5 p-5">To bring the <span>TED</span> experience to a wider audience, <span>TED</span> created a program called <span>TEDx</span></h1>
           </div>
         </div>
+
+        {/*----------------- About Tedx--------------- */}
         <div className="container-fluid p-5 my-5 about-heading bg-white">
           <div className="row my-1 text-center">
             <h1>
@@ -60,6 +62,8 @@ const About = () => {
             </p>
           </div>
         </div>
+
+        {/*--------------------- Section - 3 ------------------------*/}
         <div className="container about-heading2">
           <div className="row">
             <div className="col-md-6 ">
@@ -79,7 +83,6 @@ const About = () => {
                 create change at thrilling scale TEDx
               </p>
               <p>
-                {" "}
                 which supports individuals or groups in hosting local, self-
                 organized TED-style events around the world, and the TED Fellows
                 program, helping world-changing innovators from around the globe

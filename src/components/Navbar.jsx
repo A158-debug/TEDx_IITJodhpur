@@ -2,10 +2,8 @@
 import React from "react";
 import logo from '../assets/img/logo-white.png';
 import {Link} from 'react-router-dom'
-import theme from '../assets/img/theme.jpg'
 
 const Navbar = () => {
-
   const onToggle = () => {
     let navbarid = document.getElementById("navbar");
     navbarid.classList.toggle("navbar-mobile");
@@ -33,21 +31,10 @@ const Navbar = () => {
           <h1 class="logo me-auto primary">
             <Link to="./">
               <img src={logo} class="img-fluid" alt="logo"></img>
-              <p class="logo_underx text-white">
-                x=  independently organized <span  style={{color: "red"}}> TED </span>
-                event
-              </p>
+              <p class="logo_underx text-white">x=independently organized <span  style={{color: "red"}}> TED </span>event</p>
             </Link>
           </h1>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
 
