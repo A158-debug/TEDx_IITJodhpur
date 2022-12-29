@@ -7,20 +7,17 @@ const About = () => {
     <>
       <section className="about-fixed-image fixed-image-heading mt-5">
         <div>
-          <h1 className="my-4 text-center"> About <span style={{color: "red"}}>TEDx</span>  IIT Jodhpur </h1>
-          <h2 className="text-center blur-fixed-image">In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organised events that bring people together to share a TED-like experience. </h2>  
+          <h1 className="my-4 text-center" data-aos="fade-up" data-aos-delay="70"> About <span style={{color: "red"}}>TEDx</span>  IIT Jodhpur </h1>
+          <h2 className="text-center blur-fixed-image" data-aos="fade-up" data-aos-delay="80">In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organised events that bring people together to share a TED-like experience. </h2>  
         </div>
       </section>
-      
 
-      <section className="mt-5">
+      <section>
         <div className="container about-heading">
-          <div className="row text-center ">
-            <h1 className="my-1">About TED</h1>
-          </div>
+          <div className="row text-center "><h1 className="">About TED</h1></div>
           <div className="row my-5">
             <div className="col-md-6">
-              <p class="text-center">
+              <p class="">
                 TED is a nonprofit organization devoted to Ideas Worth
                 Spreading. Started as a four-day conference in California 30
                 years ago, TED has grown to support its mission with multiple
@@ -32,28 +29,24 @@ const About = () => {
                 Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman.
               </p>
             </div>
-            <div className="col-md-6">
-              <img src={about1} class="img-fluid" alt="" />
-            </div>
+            <div className="col-md-6"><img src={about1} class="img-fluid" alt="" /></div>
           </div>
         </div>
 
         <div className="container about-heading1">
           <div className="row">
-            <h1 className="text-center my-5 p-5">To bring the <span>TED</span> experience to a wider audience, <span>TED</span> created a program called <span>TEDx</span></h1>
+            <h1 className="text-center p-5">To bring the <span>TED</span> experience to a wider audience, <span>TED</span> created a program called <span>TEDx</span></h1>
           </div>
         </div>
 
         {/*----------------- About Tedx--------------- */}
         <div className="container-fluid p-5 my-5 about-heading bg-white">
           <div className="row my-1 text-center">
-            <h1>
-              About TED<sup>x</sup>
-            </h1>
+            <h1>About TED<sup>x</sup></h1>
           </div>
           <div className="row text-black text-center">
             <p>
-               At a TEDx event, TED Talks video and live
+              At a TEDx event, TED Talks video and live
               speakers combine to spark deep discussion and connection. These
               local, self-organized events are branded TEDx, where x =
               independently organized TED event. The TED Conference provides
@@ -64,12 +57,12 @@ const About = () => {
         </div>
 
         {/*--------------------- Section - 3 ------------------------*/}
-        <div className="container about-heading2">
+        <div className="container about-heading">
           <div className="row">
             <div className="col-md-6 ">
               <img src={about2} className="img-fluid " alt="" />
             </div>
-            <div className="col-md-6 py-5 px-5 d-flex flex-column justify-content-center align-content-center">
+            <div className="col-md-6 p-5 d-flex flex-column justify-content-center align-content-center">
               <p>
                 The annual TED Conference takes place each spring in Vancouver,
                 British Columbia. TED’s media initiatives include TED.com, where
