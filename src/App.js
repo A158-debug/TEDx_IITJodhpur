@@ -23,7 +23,7 @@ const App = () => {
     <>
       {spinner ? (
         <>
-          <video loop muted autoPlay width="100%" id="autovideo" >
+          <video loop muted autoPlay  id="autovideo" >
             <source src={video} type="video/mp4" />
           </video>
         </>
