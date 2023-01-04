@@ -1,16 +1,16 @@
 import React from "react";
 
-import Abhishek from "../assets/img/portfolio/AbhishekKumar.png";
-import Deepika from "../assets/img/portfolio/DeepikaGupta.png";
-import Dheemant from "../assets/img/portfolio/Dheemant.png";
-import Harshit from "../assets/img/portfolio/Harshit.png";
-import Inder from "../assets/img/portfolio/Indermohan.png";
-import Kartik from "../assets/img/portfolio/Kartik.png";
-import Prachiti from "../assets/img/portfolio/Prachiti.png";
-import Shivangi from "../assets/img/portfolio/Shivangi.png";
-import Yash from "../assets/img/portfolio/Yash.png";
-import Chakshu from "../assets/img/portfolio/Chakshu.png";
-import Aman from "../assets/img/portfolio/Aman.png";
+import Abhishek from "../assets/img/team/AbhishekKumar.png";
+import Deepika from "../assets/img/team/DeepikaGupta.png";
+import Dheemant from "../assets/img/team/Dheemant.png";
+import Harshit from "../assets/img/team/Harshit.png";
+import Inder from "../assets/img/team/Indermohan.png";
+import Kartik from "../assets/img/team/Kartik.png";
+import Prachiti from "../assets/img/team/Prachiti.png";
+import Shivangi from "../assets/img/team/Shivangi.png";
+import Yash from "../assets/img/team/Yash.png";
+import Chakshu from "../assets/img/team/Chakshu.png";
+import Aman from "../assets/img/team/Aman.png";
 
 const Team_cards = [
   { img: Kartik, name: "Kartik Choudhary", info: "ORGANIZER", id: 6 },

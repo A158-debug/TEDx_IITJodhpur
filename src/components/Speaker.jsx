@@ -1,19 +1,11 @@
-import React from 'react'
-import team1 from "../assets/img/team/team-1.jpg";
-import team2 from "../assets/img/team/team-2.jpg";
-import team3 from "../assets/img/team/team-3.jpg";
-import team4 from "../assets/img/team/team-4.jpg";
-import team5 from "../assets/img/team/team-5.jpg";
+import React,{useEffect} from 'react'
+import team1 from "../assets/img/speakers/team-1.jpg";
+import team2 from "../assets/img/speakers/team-2.jpg";
+import team3 from "../assets/img/speakers/team-3.jpg";
+import team4 from "../assets/img/speakers/team-4.jpg";
+import team5 from "../assets/img/speakers/team-5.jpg";
 
 const speaker_card = [
-  // {img: team1, id: 1, name: "Walter White", position: "Chief Executive Officer",},
-  // { img: team2, id: 2, name: "Sarah Jhonson", position: "Product Manager" },
-  // { img: team3, id: 3, name: "William Anderson", position: "CTO" },
-  // { img: team4, id: 4, name: "Amanda Jepson", position: "Accountant" },
-  // { img: team1, id: 5, name: "Walter White", position: "Chief Executive Officer", },
-  // { img: team2, id: 6, name: "Sarah Jhonson", position: "Product Manager" },
-  // { img: team3, id: 7, name: "William Anderson", position: "CTO" },
-  // { img: team4, id: 8, name: "Amanda Jepson", position: "Accountant" },
   { img: team3, id: 3, name: "Founder of Military Official", position: "CTO" },
   { img: team4, id: 4, name: "Cricketer", position: "Accountant" },
   { img: team1, id: 5, name: "Academia", position: "Chief Executive Officer", },
@@ -23,21 +15,19 @@ const speaker_card = [
 ];
 
 const Speaker = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
     <section id="team" class="team mt-5">
         <div class="container">
           <div class="section-title">
             <h2>
-              {" "}
-              <span class={{ color: "Red" }}>Our</span> Speakers
+              <span class={{ color: "Red" }}>OUR</span> SPEAKERS
             </h2>
-            <p>
-              Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
-              adipisci expedita at voluptas atque vitae autem.
-            </p>
           </div>
-          <div class="row justify-content-center">
+          <div class="row justify-content-center p-5">
             {speaker_card.map((e) => (
               <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member">

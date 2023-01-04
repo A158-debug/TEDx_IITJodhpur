@@ -1,8 +1,26 @@
-import React from "react";
+import React,{useState} from "react";
 import logo from "../assets/img/logo-white.png";
 import {Link} from 'react-router-dom'
 
 const Footer = () => {
+  const [visible, setVisible] = useState(false);
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300){
+      console.log("Scrooled ",scrolled)
+      setVisible(true)
+    } 
+    else if (scrolled <= 300){
+      setVisible(false)
+    }
+  };
+  const scrollToTop = () =>{
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+    });
+  };
+  window.addEventListener('scroll', toggleVisible);
   return (
     <>
       <footer id="footer">
@@ -51,6 +69,7 @@ const Footer = () => {
             <div class="text-center">Designed by <Link to="./"> TED<sup>x</sup>IIT Jodhpur</Link></div>
           </div>
         </div>
+        <button onClick={scrollToTop} className="back-to-top" style={{display: visible ? 'inline' : 'none'}}><i class="bi bi-arrow-up-short"></i></button>
       </footer>
     </>
   );

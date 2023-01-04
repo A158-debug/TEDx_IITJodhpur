@@ -1,86 +1,70 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Speaker from "./Speaker";
 import Contact from "./Contact";
-import { Link } from "react-router-dom";
-import logo from "../assets/img/logo-white.png";
 import home1 from "../assets/img/Home/home1.jpg";
-// import home2 from "../assets/img/Home/home2.jpg";
-import home3 from "../assets/img/Home/home3.png";
 import CountDown from "./CountDown/CountDown";
-// import theme3 from '../assets/img/theme3.jpg'
+import Testimonial from "./Testimonial";
+import Theme from "./Theme";
+
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
-      {/*----------Theme Photo ---------------*/}
       <section id="hero" class="d-flex align-items-center">
-        <div class="container" data-aos="zoom-out" data-aos-delay="100">
+        <div class="container" data-aos="zoom-out" data-aos-delay="80">
           <div class="row text-center">
-            {/* <div class="col-xl-8">
-              <h1>Welcome to <span style={{color: 'red'}}>TEDx </span>IIT Jodhpur</h1>
-              <h2>Let's come together on a journey beyond words </h2>
-              <a href="#team" class="btn-get-started scrollto">Get Started</a>
-            </div> */}
             <h1>THE NEW DIMENSION</h1>
-            {/* <img src={theme} alt="" class="img-fluid" /> */}
           </div>
         </div>
       </section>
 
-      {/*---------- Theme Content-------------------*/}
       <section>
-        <div className="container-lg theme-section">
-          <div
-            className="row text-center"
-            data-aos="fade-up"
-            data-aos-delay="70"
-          >
-            <div className="">
-              <h1 className="theme-section-heading1 p-2 ">
-                HELLO <span className="text-white">STRANGER</span>
-              </h1>
-              <p style={{ color: "#ffffffcc" }}>
-                {" "}
-                Are you ready to unravel the unexplored?{" "}
-              </p>
+        <div className="container theme__section ">
+          <div className="row text-center" data-aos="fade-up" data-aos-delay="70">
+            <div className="theme__section_heading">
+              <h1> HELLO <span className="text-white">STRANGER</span></h1>
+              <p style={{ color: "#ffffffcc" }}> Are you ready to unravel the unexplored? </p>
               <CountDown deadline="January, 19, 2023" />
-              <p style={{ color: "#ffffffcc" }}>
+              <p className=" p-5">
                 To unlock the untapped opportunities and experience an
-                unrestricted rush? As the new level enters play, there is a
+                unrestricted rush ? As the new level enters play, there is a
                 dynamic, fiery, and innovative energy in the air encouraging us
                 to see beyond what is to what it may be! &nbsp;
                 <span style={{ color: "red", fontWeight: "bold" }}>TEDx </span>
-                IITJodhpur is here to transport you into a thrilling NEW
+                IIT Jodhpur is here to transport you into a thrilling NEW
                 DIMENSION and open your eyes to the possibilities of anything we
-                can imagine, but outside the box!
+                can imagine, but outside the box !
               </p>
             </div>
           </div>
-
-          <div className="row mt-5">
-            <div
-              className="col-md-6 text-center align-self-center"
-              data-aos="fade-up"
-              data-aos-delay="70"
-            >
-              <img src={home1} alt="" className="img-fluid rounded" />
+          
+          <div
+            className="row mt-5 theme__section_dimension"
+            data-aos="fade-up"
+            data-aos-delay="70"
+          >
+            <div className="col-md-6 p-0 ">
+              <img src={home1} alt="" className="img-fluid" />
             </div>
-            <div
-              className="col-md-6 theme-section-heading2 d-flex justify-content-center align-items-end"
-              data-aos="fade-up"
-              data-aos-delay="70"
-            >
-              <div className="div mt-5 mt-md-0">
-                <h1>THE NEW DIMENSION</h1>
+            <div className="col-md-6 d-flex justify-content-center align-items-end ">
+              <div className="div my-5 mt-md-0">
+                <h1>THE NEW DIMENSION <br/> January 19th, 2023</h1>
                 <h1 style={{ color: "#FE2A06", borderTop: "1px solid white" }}>
-                  TED<sup>x</sup>
-                  <span style={{ color: "white" }}> IIT JODHPUR</span>{" "}
+                  
                 </h1>
                 <div style={{ float: "right" }}>
-                  <h2 style={{ color: "#FE2A06" }}>
-                    19<sup>th</sup> January
-                  </h2>
-                  <button type="button" class="btn btn-danger btn-lg m-2">
-                    RE WATCH
+                  <button
+                    type="button"
+                    class="btn btn-lg m-2"
+                    style={{
+                      backgroundColor: "#FE2A06",
+                      color: "white",
+                      fontWeight: "500",
+                    }}
+                  >
+                  <strong> GET TICKETS</strong> 
                   </button>
                 </div>
               </div>
@@ -89,103 +73,73 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
-        <div className="container">
-          <div className="video-responsive">
-            <iframe
-              width="853"
-              height="480"
-              src={`https://www.youtube.com/embed/IEjD1TcXsoA`}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              title="Embedded youtube"
-            />
-          </div>
-        </div>
-      </section>
+     <Theme/>
 
-                {/* <p className="">
-                  We are here to dispel the notion of limitations, to break down
-                  the boundaries imposed by the current dimensions of reality,
-                  and to fully realize our potential. To learn from the mistakes
-                  of the past, to persevere through the most difficult
-                  challenges, and to bring about change so that success becomes
-                  more than just a tale, and failure acts as a spark to rekindle
-                  rather than extinguish the flame of desire. Where every breath
-                  feels worthwhile and the future is constantly overwhelming but
-                  undetermined, untitled, and unbound!
-                </p> */}
- 
       {/*----------------Reason to be partner with us -------------------*/}
       <section id="about" class="about section-bg mb-5">
-        <div class="container" data-aos="fade-up">
-          <div class="row no-gutters">
-            <div class="content col-xl-5 d-flex align-items-stretch">
+        <div class="container partner_reason" data-aos="fade-up">
+          <div class="row ">
+            <div class="content ">
               <div class="content">
-                <h3>Reason To Partner With Us</h3>
+                <h3>This is How We do It</h3>
                 <p>
                   We are looking for speakers or performers who have radically
                   new ideas, exposing cutting-edge research, technology, design,
                   and more
                 </p>
-                <Link to="./about" class="about-btn">
+                {/* <Link to="./about" class="about-btn">
                   <span>About us</span> <i class="bx bx-chevron-right"></i>
-                </Link>
+                </Link> */}
               </div>
             </div>
-            <div class="col-xl-7 d-flex align-items-stretch">
-              <div class="icon-boxes d-flex flex-column justify-content-center">
-                <div class="row">
-                  <div
-                    class="col-md-6 icon-box"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    <i class="bx bx-receipt"></i>
-                    <h4>Brand Linking</h4>
-                    <p>
-                      Associate with a powerful worldwide brand and movement
-                      synonymous with creativity, collaboration, and innovation
-                    </p>
-                  </div>
-                  <div
-                    class="col-md-6 icon-box"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                  >
-                    <i class="bx bx-cube-alt"></i>
-                    <h4>Lead Generation</h4>
-                    <p>
-                      Gain highly qualified leads from tuned-in intellectuals
-                      across a variety of industries, including education,
-                      healthcare, and technology.
-                    </p>
-                  </div>
-                  <div
-                    class="col-md-6 icon-box"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                  >
-                    <i class="bx bx-images"></i>
-                    <h4>Unconventional</h4>
-                    <p>
-                      Access unconventional showcase opportunities unique to our
-                      conference, creating genuine experiences that drive higher
-                      engagement.
-                    </p>
-                  </div>
-                  <div
-                    class="col-md-6 icon-box"
-                    data-aos="fade-up"
-                    data-aos-delay="400"
-                  >
-                    <i class="bx bx-shield"></i>
-                    <h4>Diversity</h4>
-                    <p>
-                      We provide a venue for respectful conversations and
-                      exchange of ideas among all people
-                    </p>
-                  </div>
+          </div>
+          <div className="row">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div
+                  class="col-md-4 icon-box"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <i class="bx bx-receipt"></i>
+                  <h4>Events</h4>
+                  <p>
+                    Our mission is to inspire and inform by unleashing hidden,
+                    groundbreaking and unique ideas worth spreading from all
+                    over the world. We host conferences with live TEDxTalks and
+                    cover a diversity of topics, ranging from technology,
+                    entertainment & design to science, art & global issues.
+                  </p>
+                </div>
+                <div
+                  class="col-md-4 icon-box"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Community</h4>
+                  <p>
+                    TEDxIIT Jodhpur is a globally-minded local community,
+                    welcoming people from every discipline and culture who seek
+                    a deeper understanding of the world. This growing group of
+                    curious individuals engage with ideas and each other, both
+                    online and at live events, all year long.
+                  </p>
+                </div>
+                <div
+                  class="col-md-4 icon-box"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <i class="bx bx-images"></i>
+                  <h4>Online</h4>
+                  <p>
+                    Long enough to explore a challenging perspective but short
+                    enough to read in a single sitting, our online channels pick
+                    up where Talks leave off. Discover new ideas every day in
+                    our Online Magazine, our Social Media and our Noteworthy
+                    Newsletter.
+                  </p>
                 </div>
               </div>
             </div>
@@ -193,25 +147,19 @@ const Home = () => {
         </div>
       </section>
 
-      <div
-        className="container-fluid p-5"
-        style={{ backgroundColor: "#FE2A06" }}
-      >
+      <div className="container-fluid p-5" style={{ backgroundColor: "#FE2A06" }}>
         <div className="row" data-aos="fade-up" data-aos-delay="70">
-          <h1 className="theme-section-heading3 text-center mt-5 ">
+          <h1 className="theme-section-heading3 text-center text-uppercase ">
             So stay tuned as we take you on an unbelievable journey to this new
             dimension where you will discover your new self!
           </h1>
         </div>
       </div>
-
-      {/*---------------- Speaker -------------------*/}
+      <Testimonial/>
       <Speaker />
       <section className="fixed-image mt-5">
-        <h1> Be with us </h1>
+        <h1> Be With Us </h1>
       </section>
-
-      {/*---------------- Contacts -------------------*/}
       <Contact />
     </>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import emailjs from 'emailjs-com'
 
 const Contact = () => {
@@ -10,16 +10,17 @@ const Contact = () => {
     e.target.reset()
     alert("Thank you contact us")
   }
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Contact</h2>
+            <h2>CONTACT</h2>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+             We would love to respond to your queries and help you succeed. Feel free to get in touch with us
             </p>
           </div>
 

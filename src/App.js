@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
-import Contact from './components/Contact'
 import Team from './components/Team'
 import Speakers from './components/Speakers'
 import About from './components/About'
 import Footer from './components/Footer'
-import Register from './components/Register'
 import Home from './components/Home'
+import Theme from './components/Theme'
 import video from './assets/TEDxvideo.mp4'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 
@@ -49,10 +48,7 @@ const App = () => {
             <Route path="/" element={<Home/>} />
             <Route path="/about" element={<About />} />
             <Route path="/team" element={<Team />} />
-            <Route path="/events" element={<Team />} />
-            <Route path="/gallery" element={<Team />} />
             <Route path="/speakers" element={<Speakers />} />
-            <Route path="/contacts" element={<Speakers />} />
           </Routes>
         </main>
         <Footer />

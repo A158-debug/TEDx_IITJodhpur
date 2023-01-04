@@ -2,6 +2,7 @@
 import React from "react";
 import logo from '../assets/img/logo-white.png';
 import {Link} from 'react-router-dom'
+import { HashLink  } from 'react-router-hash-link';
 
 const Navbar = () => {
   const onToggle = () => {
@@ -41,21 +42,22 @@ const Navbar = () => {
           <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
               <li onClick={ToggleButton}><Link class="nav-link scrollto" to="./">Home</Link></li>
+              <li onClick={ToggleButton}><HashLink class="nav-link scrollto" to="/#teaser">Theme</HashLink></li>
               <li  class="dropdown"><a href="#" onClick={ToggleDropDown}><span>About</span> <i class="bi bi-chevron-down"></i></a>
                 <ul >
                   <li  onClick={ToggleButton}><Link to="./about"><span>About Us</span></Link></li>
                   <li  onClick={ToggleButton}><Link to="./team"><span>TED<sup>x</sup> Team</span></Link></li>
+                  <li  onClick={ToggleButton}><a href="https://www.iitj.ac.in/"><span>IIT Jodhpur</span></a></li>
                 </ul>  
               </li>
               <li class="dropdown"><a onClick={ToggleDropDown} href="#"><span>Spekaers</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
                   <li  onClick={ToggleButton}><Link to="./speakers">Our Speakers</Link></li>
-                  <li  onClick={ToggleButton}> <Link to="./">Apply To Speak</Link></li>
+                  <li  onClick={ToggleButton}> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfemXEg95_e8vxkKPfuepGxiYN2HekYMS-vvAW8e5YpOWrcHg/viewform" target="_blank" rel="noreferrer">Apply To Speak</a></li>
                 </ul>  
             </li>
-              <li onClick={ToggleButton}><Link class="nav-link scrollto" to="./events">Events</Link></li>
-              <li onClick={ToggleButton}><Link class="nav-link scrollto " to="./gallery">Gallery</Link></li>
-              <li onClick={ToggleButton}><Link class="nav-link scrollto" to="./contact">Contact us</Link></li>
+              <li onClick={ToggleButton}><Link class="nav-link scrollto" to="./">Events</Link></li>
+              <li onClick={ToggleButton}><HashLink class="nav-link scrollto" to="/#contact">Contact us</HashLink></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle" onClick={onToggle} id="toggle-button"></i>
           </nav>

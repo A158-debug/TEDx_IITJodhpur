@@ -5,8 +5,6 @@
     margin: 1rem 0;
     padding: 10px;
     text-align: center;
-    /* flex-wrap: wrap; */
-    /* width: 400px; */
   }
   
   .box {
@@ -41,9 +39,3 @@
       font-size: calc(34px + 2vmin);
     }
   }
-/* 
-  @media (min-width: 768px) and (max-width: 1200px) {
-    .box p {
-      font-size: calc(24px + 2vmin);
-    }
-  } */
