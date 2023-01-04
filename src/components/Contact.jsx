@@ -5,7 +5,7 @@ const Contact = () => {
 
   function sendEmail(e){
     e.preventDefault();
-    emailjs.sendForm("service_mwim6xj","template_zcp7n7f",e.target,'user_UVUwRDP32CPM2naPvL9MS').then((res)=>
+    emailjs.sendForm("service_65xnx85","template_73kpjml",e.target,'nWKEqZqoU-sjdCxug').then((res)=>
     console.log(res)).catch((e)=>console.log(e))
     e.target.reset()
     alert("Thank you contact us")
@@ -39,9 +39,9 @@ const Contact = () => {
                     <i class="bx bx-envelope"></i>
                     <h3  class="text-white">Email Us</h3>
                     <p>
-                      info@example.com
+                      tedx@iitj.ac.in
                       <br />
-                      contact@example.com
+                     choudhary.21@iitj.ac.in
                     </p>
                   </div>
                 </div>
@@ -50,9 +50,12 @@ const Contact = () => {
                     <i class="bx bx-phone-call"></i>
                     <h3  class="text-white">Call Us</h3>
                     <p>
-                      +1 5589 55488 55
+                      +91 9805397585 
+                      <br/>
+                      +91 9529107219 
+                      {/* //shivangi -curator */}
                       <br />
-                      +1 6678 254445 41
+                      
                     </p>
                   </div>
                 </div>

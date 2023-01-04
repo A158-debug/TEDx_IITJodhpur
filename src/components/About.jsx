@@ -1,12 +1,15 @@
-import React from "react";
+import React,{useEffect} from "react";
 import about1 from "../assets/img/about1.jpg";
 import about2 from "../assets/img/about2.jpg";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
-      <section className="about-fixed-image fixed-image-heading mt-5">
-        <div>
+      <section className="about-fixed-image fixed-image-heading mt-5 d-flex align-content-center">
+        <div className="d-flex flex-column justify-content-around">
           <h1 className="my-4 text-center" data-aos="fade-up" data-aos-delay="70"> About <span style={{color: "red"}}>TEDx</span>  IIT Jodhpur </h1>
           <h2 className="text-center blur-fixed-image" data-aos="fade-up" data-aos-delay="80">In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organised events that bring people together to share a TED-like experience. </h2>  
         </div>
@@ -35,14 +38,14 @@ const About = () => {
 
         <div className="container about-heading1">
           <div className="row">
-            <h1 className="text-center p-5">To bring the <span>TED</span> experience to a wider audience, <span>TED</span> created a program called <span>TEDx</span></h1>
+            <h1 className="text-center p-md-5 p-3">To bring the <span>TED</span> experience to a wider audience, <span>TED</span> created a program called <span>TEDx</span></h1>
           </div>
         </div>
 
         {/*----------------- About Tedx--------------- */}
         <div className="container-fluid p-5 my-5 about-heading bg-white">
           <div className="row my-1 text-center">
-            <h1>About TED<sup>x</sup></h1>
+            <h1>About TEDx</h1>
           </div>
           <div className="row text-black text-center">
             <p>
@@ -62,7 +65,7 @@ const About = () => {
             <div className="col-md-6 ">
               <img src={about2} className="img-fluid " alt="" />
             </div>
-            <div className="col-md-6 p-5 d-flex flex-column justify-content-center align-content-center">
+            <div className="col-md-6 p-md-5 p-2 d-flex flex-column justify-content-center align-content-center">
               <p>
                 The annual TED Conference takes place each spring in Vancouver,
                 British Columbia. TED’s media initiatives include TED.com, where

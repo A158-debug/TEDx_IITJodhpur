@@ -47,7 +47,7 @@ const Navbar = () => {
                 <ul >
                   <li  onClick={ToggleButton}><Link to="./about"><span>About Us</span></Link></li>
                   <li  onClick={ToggleButton}><Link to="./team"><span>TED<sup>x</sup> Team</span></Link></li>
-                  <li  onClick={ToggleButton}><a href="https://www.iitj.ac.in/"><span>IIT Jodhpur</span></a></li>
+                  <li  onClick={ToggleButton}><a href="https://www.iitj.ac.in/" target="_blank" rel="noreferrer"><span>IIT Jodhpur</span></a></li>
                 </ul>  
               </li>
               <li class="dropdown"><a onClick={ToggleDropDown} href="#"><span>Spekaers</span> <i class="bi bi-chevron-down"></i></a>

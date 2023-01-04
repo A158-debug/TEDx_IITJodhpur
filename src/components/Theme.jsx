@@ -4,13 +4,13 @@ const Theme = () => {
   return (
     <>
      <section>
-        <div className="container teaser" id="teaser">
+        <div className="container teaser my-2" id="teaser">
           <div className="row">
-            <h1 className="my-4 text-center teaser__content">
-              <span className="text-white"> Teaser Video </span>: The New
+            <h1 className="my-md-5 my-3 text-center teaser__content text-uppercase">
+              <span className="text-white "> Teaser Video </span>: The New
               Dimension
             </h1>
-            <div className="col-md-6">
+            <div className="col-md-6 mb-md-0 mb-3">
               <div className="video-responsive">
                 <iframe
                   width="853"

@@ -21,27 +21,30 @@ const App = () => {
 
   return (
     <>
-      {/* {spinner ? (
+      {spinner ? (
         <>
-          <video loop muted autoPlay  width="100%" id="autovideo" >
-            <source  src={video} type="video/mp4"/>
+          <video loop muted autoPlay width="100%" id="autovideo" >
+            <source src={video} type="video/mp4" />
           </video>
         </>
-            ) : (
-            <>
-              <Navbar />
-              <main id="main">
-                <Register />
-                <About />
-                <Speakers />
-                <Team />
-                <Contact />
-              </main>
-              <Footer />
-            </>
-            )
-      } */}
-      <BrowserRouter>
+      ) : (
+        <>
+          <BrowserRouter>
+            <Navbar />
+            <main id="main">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/team" element={<Team />} />
+                <Route path="/speakers" element={<Speakers />} />
+              </Routes>
+            </main>
+            <Footer />
+          </BrowserRouter>
+        </>
+      )
+      }
+      {/* <BrowserRouter>
         <Navbar/>
         <main id="main">
           <Routes>
@@ -52,7 +55,7 @@ const App = () => {
           </Routes>
         </main>
         <Footer />
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   )
 }

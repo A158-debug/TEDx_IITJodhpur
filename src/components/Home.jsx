@@ -7,9 +7,9 @@ import Testimonial from "./Testimonial";
 import Theme from "./Theme";
 
 const Home = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  // useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [])
   return (
     <>
       <section id="hero" class="d-flex align-items-center">
@@ -21,13 +21,13 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="container theme__section ">
-          <div className="row text-center" data-aos="fade-up" data-aos-delay="70">
-            <div className="theme__section_heading">
+        <div className="container">
+          <div className="row text-start text-md-center" data-aos="fade-up" data-aos-delay="70">
+            <div className="theme__section">
               <h1> HELLO <span className="text-white">STRANGER</span></h1>
               <p style={{ color: "#ffffffcc" }}> Are you ready to unravel the unexplored? </p>
               <CountDown deadline="January, 19, 2023" />
-              <p className=" p-5">
+              <p className="p-md-5 p-0">
                 To unlock the untapped opportunities and experience an
                 unrestricted rush ? As the new level enters play, there is a
                 dynamic, fiery, and innovative energy in the air encouraging us
@@ -38,34 +38,16 @@ const Home = () => {
                 can imagine, but outside the box !
               </p>
             </div>
-          </div>
-          
-          <div
-            className="row mt-5 theme__section_dimension"
-            data-aos="fade-up"
-            data-aos-delay="70"
-          >
-            <div className="col-md-6 p-0 ">
+          </div>   
+          <div className="row mt-5 theme__section_dimension" data-aos="fade-up" data-aos-delay="70">
+            <div className="col-md-5">
               <img src={home1} alt="" className="img-fluid" />
             </div>
-            <div className="col-md-6 d-flex justify-content-center align-items-end ">
-              <div className="div my-5 mt-md-0">
-                <h1>THE NEW DIMENSION <br/> January 19th, 2023</h1>
-                <h1 style={{ color: "#FE2A06", borderTop: "1px solid white" }}>
-                  
-                </h1>
-                <div style={{ float: "right" }}>
-                  <button
-                    type="button"
-                    class="btn btn-lg m-2"
-                    style={{
-                      backgroundColor: "#FE2A06",
-                      color: "white",
-                      fontWeight: "500",
-                    }}
-                  >
-                  <strong> GET TICKETS</strong> 
-                  </button>
+            <div className="col-md-7 d-flex justify-content-center align-items-end ">
+              <div className="mb-md-5 mb-0">
+                <h1 >THE NEW DIMENSION <br/> JANUARY 19th, 2023</h1>
+                <div className="">
+                  <a href="./" target="_blank" class="get-started-btn scrollto p-3 ">GET TICKETS <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -73,24 +55,20 @@ const Home = () => {
         </div>
       </section>
 
-     <Theme/>
+      <Theme/>
 
       {/*----------------Reason to be partner with us -------------------*/}
       <section id="about" class="about section-bg mb-5">
         <div class="container partner_reason" data-aos="fade-up">
-          <div class="row ">
+          <div class="row">
             <div class="content ">
-              <div class="content">
-                <h3>This is How We do It</h3>
+                <h3>This is <span style={{color: "red"}}>  How We do It </span></h3>
                 <p>
                   We are looking for speakers or performers who have radically
                   new ideas, exposing cutting-edge research, technology, design,
                   and more
                 </p>
-                {/* <Link to="./about" class="about-btn">
-                  <span>About us</span> <i class="bx bx-chevron-right"></i>
-                </Link> */}
-              </div>
+              
             </div>
           </div>
           <div className="row">
@@ -155,11 +133,14 @@ const Home = () => {
           </h1>
         </div>
       </div>
+
       <Testimonial/>
       <Speaker />
+
       <section className="fixed-image mt-5">
         <h1> Be With Us </h1>
       </section>
+
       <Contact />
     </>
   );

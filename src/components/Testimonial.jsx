@@ -1,5 +1,4 @@
 import React from "react";
-import home1 from "../assets/img/Home/home1.jpg";
 import Slider from "react-slick";
 
 const Testimonial = () => {
@@ -11,23 +10,39 @@ const Testimonial = () => {
     slidesToScroll: 3,
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 1324,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1000,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
-        },
+          initialSlide: 2
+        }
       },
-    ],
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   return (
     <>
       <section id="testimonials" class="testimonials" style={{backgroundColor:'black'}}>
         <div class="container " data-aos="fade-up">
           <div class="section-title">
-            <h2>TOP TEDx TALKS</h2>
+            <h2> <span style={{color:'white'}}>TOP</span> TEDx TALKS</h2>
           </div>
-          <div className="">
+          <div className="p-md-0 p-3">
             <Slider {...settings}>
               <div className="p-2 m-1">
                 <div className="video-responsive">
@@ -139,7 +154,7 @@ const Testimonial = () => {
         </div>
         <div className="container">
             <div className="row mt-5  justify-content-center ">
-                <p className="testimonial_border text-center">View more talks</p>
+                <a href="https://www.ted.com/playlists/180/the_10_most_popular_tedx_talks"  target="_blank" rel="noreferrer" className="testimonial_border text-center text-white">View more talks</a>
             </div>
         </div>
       </section>

@@ -23,8 +23,8 @@ const Speaker = () => {
     <section id="team" class="team mt-5">
         <div class="container">
           <div class="section-title">
-            <h2>
-              <span class={{ color: "Red" }}>OUR</span> SPEAKERS
+            <h2 className=''>
+             <span class="text-white">  OUR</span>  SPEAKERS
             </h2>
           </div>
           <div class="row justify-content-center p-5">

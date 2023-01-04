@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import Abhishek from "../assets/img/team/AbhishekKumar.png";
 import Deepika from "../assets/img/team/DeepikaGupta.png";
@@ -27,11 +27,14 @@ const Team_cards = [
 ];
 
 const Team = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <section id="portfolio" class="portfolio">
         <section className="team-fixed-image fixed-image-heading">
-          <div className="text-white">
+          <div className="text-white d-flex flex-column justify-content-around">
             <h1 className="my-4 text-center">Meet Our <span style={{ color: "red" }}>TEDx</span> IIT Jodhpur Team</h1>
             <h2 className="my-3 text-center blur-fixed-image">
               Our team do everything from speaker selection, event coordination
