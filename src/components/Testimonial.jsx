@@ -77,12 +77,9 @@ const Testimonial = () => {
                   />
                 </div>
                 <div className="testimonial_content mt-2">
-                  <p className="text-white testimonial_content_heading">How great leaders inspire action</p>
+                  <p className="text-white testimonial_content_heading">The power of vulnerability</p>
                   <p>
-                    Simon Sinek has a simple but powerful model for
-                    inspirational leadership -- starting with a golden circle
-                    and the question: "Why?" His examples include Apple, Martin
-                    Luther King Jr. and the Wright brothers
+                  Brené Brown studies human connection -- our ability to empathize, belong, love. In a poignant, funny talk, she shares a deep insight from her research, one that sent her on a personal quest to know herself as well as to understand humanity. A talk to share.
                   </p>
                 </div>
               </div>
@@ -98,12 +95,9 @@ const Testimonial = () => {
                   />
                 </div>
                 <div className="testimonial_content mt-2">
-                  <p className="text-white testimonial_content_heading">How great leaders inspire action</p>
+                  <p className="text-white testimonial_content_heading">Looks aren't everything. Believe me</p>
                   <p>
-                    Simon Sinek has a simple but powerful model for
-                    inspirational leadership -- starting with a golden circle
-                    and the question: "Why?" His examples include Apple, Martin
-                    Luther King Jr. and the Wright brothers
+                  Cameron Russell admits she won "a genetic lottery": she's tall, pretty and an underwear model. But don't judge her by her looks. In this fearless talk, she takes a wry look at the industry that had her looking highly seductive at barely 16 years old.
                   </p>
                 </div>
               </div>
@@ -119,12 +113,9 @@ const Testimonial = () => {
                   />
                 </div>
                 <div className="testimonial_content mt-2">
-                  <p className="text-white testimonial_content_heading">How great leaders inspire action</p>
+                  <p className="text-white testimonial_content_heading">The happy secret to better work</p>
                   <p>
-                    Simon Sinek has a simple but powerful model for
-                    inspirational leadership -- starting with a golden circle
-                    and the question: "Why?" His examples include Apple, Martin
-                    Luther King Jr. and the Wright brothers
+                  We believe we should work hard in order to be happy, but could we be thinking about things backwards? In this fast-moving and very funny talk, psychologist Shawn Achor argues that, actually, happiness inspires us to be more productive.
                   </p>
                 </div>
               </div>
@@ -142,10 +133,7 @@ const Testimonial = () => {
                 <div className="testimonial_content mt-2">
                   <p className="text-white testimonial_content_heading">Why Having Fun Is the Secret to a Healthier Life </p>
                   <p>
-                    Simon Sinek has a simple but powerful model for
-                    inspirational leadership -- starting with a golden circle
-                    and the question: "Why?" His examples include Apple, Martin
-                    Luther King Jr. and the Wright brothers
+                  Have you had your daily dose of fun? It's not just enjoyable, it's also essential for your health and happiness, says science journalist Catherine Price. She proposes a new definition of fun 
                   </p>
                 </div>
               </div>

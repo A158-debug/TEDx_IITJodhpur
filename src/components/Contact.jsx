@@ -51,17 +51,19 @@ const Contact = () => {
                     <h3  class="text-white">Call Us</h3>
                     <p>
                       +91 9805397585 
-                      <br/>
-                      +91 9529107219 
-                      {/* //shivangi -curator */}
-                      <br />
-                      
-                    </p>
+                      {/* <br/>
+                      Kartik : Organizer */}
+                      </p>
+                    <p>
+                      +91 9529107219   
+                      {/* <br />
+                     shivangi : Curator */}
+                     </p>
                   </div>
                 </div>
               </div>
             </div>
-
+ 
             <div class="col-lg-6">
               <form
               onSubmit={sendEmail}

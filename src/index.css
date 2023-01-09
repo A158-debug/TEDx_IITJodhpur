@@ -124,19 +124,12 @@ h6 {
   }
 }
 
-/* .theme__section_dimension::before{
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  content: "";
+/* .theme__section_dimension{
+ 
   background-image:url('./assets/img/Home/home5.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  filter: grayscale(100%);
-  object-fit: contain;
   opacity: 0.2;
 } */
 

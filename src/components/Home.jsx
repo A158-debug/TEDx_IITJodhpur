@@ -15,12 +15,12 @@ const Home = () => {
       <section id="hero" class="d-flex align-items-center">
         <div class="container" data-aos="zoom-out" data-aos-delay="80">
           <div class="row text-center">
-            <h1>THE NEW DIMENSION</h1>
+            <h1>THE NEW Abhishek</h1>
           </div>
         </div>
       </section>
 
-      <section>
+      <section className="">
         <div className="container">
           <div className="row text-start text-md-center" data-aos="fade-up" data-aos-delay="70">
             <div className="theme__section">
@@ -39,7 +39,12 @@ const Home = () => {
               </p>
             </div>
           </div>   
-          <div className="row mt-5 theme__section_dimension" data-aos="fade-up" data-aos-delay="70">
+        </div>
+      </section>
+
+      <section className="p-md-0 p-2">
+        <div className="container-fluid">
+        <div className="row  theme__section_dimension" data-aos="fade-up" data-aos-delay="70">
             <div className="col-md-5">
               <img src={home1} alt="" className="img-fluid" />
             </div>
