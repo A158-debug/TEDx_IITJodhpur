@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <>
-      {/* {spinner ? (
+      {spinner ? (
         <>
           <video loop muted autoPlay  id="autovideo" >
             <source src={video} type="video/mp4" />
@@ -43,8 +43,8 @@ const App = () => {
           </BrowserRouter>
         </>
       )
-      } */}
-      <BrowserRouter>
+      }
+      {/* <BrowserRouter>
         <Navbar/>
         <main id="main">
           <Routes>
@@ -55,7 +55,7 @@ const App = () => {
           </Routes>
         </main>
         <Footer />
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   )
 }
