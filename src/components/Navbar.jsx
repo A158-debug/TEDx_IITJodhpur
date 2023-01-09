@@ -50,7 +50,7 @@ const Navbar = () => {
                   <li  onClick={ToggleButton}><a href="https://www.iitj.ac.in/" target="_blank" rel="noreferrer"><span>IIT Jodhpur</span></a></li>
                 </ul>  
               </li>
-              <li class="dropdown"><a onClick={ToggleDropDown} href="#"><span>Spekaers</span> <i class="bi bi-chevron-down"></i></a>
+              <li class="dropdown"><a onClick={ToggleDropDown} href="#"><span>Speakers</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
                   <li  onClick={ToggleButton}><Link to="./speakers">Our Speakers</Link></li>
                   <li  onClick={ToggleButton}> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfemXEg95_e8vxkKPfuepGxiYN2HekYMS-vvAW8e5YpOWrcHg/viewform" target="_blank" rel="noreferrer">Apply To Speak</a></li>
