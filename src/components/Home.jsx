@@ -15,7 +15,7 @@ const Home = () => {
       <section id="hero" class="d-flex align-items-center">
         <div class="container" data-aos="zoom-out" data-aos-delay="80">
           <div class="row text-center">
-            <h1>THE NEW Abhishek</h1>
+            <h1>THE NEW DIMENSION</h1>
           </div>
         </div>
       </section>
