@@ -27,41 +27,41 @@ const Navbar = () => {
   
   return (
     <>
-      <header id="header" class="fixed-top d-flex align-items-center">
-        <div class="container d-flex align-items-center">
-          <h1 class="logo me-auto primary">
+      <header id="header" className="fixed-top d-flex align-items-center">
+        <div className="container d-flex align-items-center">
+          <h1 className="logo me-auto primary">
             <Link to="./">
-              <img src={logo} class="img-fluid" alt="logo"></img>
-              <p class="logo_underx text-white">x=independently organized <span  style={{color: "red"}}> TED </span>event</p>
+              <img src={logo} className="img-fluid" alt="logo"></img>
+              <p className="logo_underx text-white">x=independently organized <span  style={{color: "red"}}> TED </span>event</p>
             </Link>
           </h1>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
           </button>
 
-          <nav id="navbar" class="navbar order-last order-lg-0">
+          <nav id="navbar" className="navbar order-last order-lg-0">
             <ul>
-              <li onClick={ToggleButton}><Link class="nav-link scrollto" to="./">Home</Link></li>
-              <li onClick={ToggleButton}><HashLink class="nav-link scrollto" to="/#teaser">Theme</HashLink></li>
-              <li  class="dropdown"><a href="#" onClick={ToggleDropDown}><span>About</span> <i class="bi bi-chevron-down"></i></a>
+              <li onClick={ToggleButton}><Link className="nav-link scrollto" to="./">Home</Link></li>
+              <li onClick={ToggleButton}><HashLink className="nav-link scrollto" to="/#teaser">Theme</HashLink></li>
+              <li  className="dropdown"><a href="#" onClick={ToggleDropDown}><span>About</span> <i className="bi bi-chevron-down"></i></a>
                 <ul >
                   <li  onClick={ToggleButton}><Link to="./about"><span>About Us</span></Link></li>
                   <li  onClick={ToggleButton}><Link to="./team"><span>TED<sup>x</sup> Team</span></Link></li>
                   <li  onClick={ToggleButton}><a href="https://www.iitj.ac.in/" target="_blank" rel="noreferrer"><span>IIT Jodhpur</span></a></li>
                 </ul>  
               </li>
-              <li class="dropdown"><a onClick={ToggleDropDown} href="#"><span>Speakers</span> <i class="bi bi-chevron-down"></i></a>
+              <li className="dropdown"><a onClick={ToggleDropDown} href="#"><span>Speakers</span> <i className="bi bi-chevron-down"></i></a>
                 <ul>
                   <li  onClick={ToggleButton}><Link to="./speakers">Our Speakers</Link></li>
                   <li  onClick={ToggleButton}> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfemXEg95_e8vxkKPfuepGxiYN2HekYMS-vvAW8e5YpOWrcHg/viewform" target="_blank" rel="noreferrer">Apply To Speak</a></li>
                 </ul>  
             </li>
-              <li onClick={ToggleButton}><Link class="nav-link scrollto" to="./">Events</Link></li>
-              <li onClick={ToggleButton}><HashLink class="nav-link scrollto" to="/#contact">Contact us</HashLink></li>
+              <li onClick={ToggleButton}><Link className="nav-link scrollto" to="./">Events</Link></li>
+              <li onClick={ToggleButton}><HashLink className="nav-link scrollto" to="/#contact">Contact us</HashLink></li>
             </ul>
-            <i class="bi bi-list mobile-nav-toggle" onClick={onToggle} id="toggle-button"></i>
+            <i className="bi bi-list mobile-nav-toggle" onClick={onToggle} id="toggle-button"></i>
           </nav>
-          <Link to="./" class="get-started-btn scrollto">Get Started</Link>
+          <Link to="./" className="get-started-btn scrollto">Get Started</Link>
         </div>
       </header>
      

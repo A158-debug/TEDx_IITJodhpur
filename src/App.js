@@ -1,14 +1,23 @@
-import React, { useState, useEffect } from 'react'
+/* eslint-disable import/first */
+import React, { useState, useEffect, Suspense, lazy } from 'react'
 import Navbar from './components/Navbar'
-import Team from './components/Team'
-import Speakers from './components/Speakers'
-import About from './components/About'
 import Footer from './components/Footer'
 import Home from './components/Home'
 import Theme from './components/Theme'
 import video from './assets/TEDxvideo.mp4'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+const About = lazy(() => import('./components/About'));
+const Team = lazy(() => import('./components/Team'));
+const Speakers = lazy(() => import('./components/Speakers'));
+
+const Loader = () => {
+  <>
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </>
+}
 
 const App = () => {
   const [spinner, setSpinner] = useState(false);
@@ -32,12 +41,14 @@ const App = () => {
           <BrowserRouter>
             <Navbar />
             <main id="main">
+              <Suspense fallback={<Loader/>}>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/team" element={<Team />} />
                 <Route path="/speakers" element={<Speakers />} />
               </Routes>
+              </Suspense>
             </main>
             <Footer />
           </BrowserRouter>
@@ -45,14 +56,16 @@ const App = () => {
       )
       }
       {/* <BrowserRouter>
-        <Navbar/>
+        <Navbar />
         <main id="main">
-          <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/about" element={<About />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/speakers" element={<Speakers />} />
-          </Routes>
+          <Suspense fallback={<Loader/>}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/speakers" element={<Speakers />} />
+            </Routes>
+          </Suspense>
         </main>
         <Footer />
       </BrowserRouter> */}

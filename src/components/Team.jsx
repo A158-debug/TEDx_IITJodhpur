@@ -32,7 +32,7 @@ const Team = () => {
   }, [])
   return (
     <>
-      <section id="portfolio" class="portfolio">
+      <section id="portfolio" className="portfolio">
         <section className="team-fixed-image fixed-image-heading">
           <div className="text-white d-flex flex-column justify-content-around">
             <h1 className="my-4 text-center">Meet Our <span style={{ color: "red" }}>TEDx</span> IIT Jodhpur Team</h1>
@@ -47,7 +47,7 @@ const Team = () => {
         </section>
 
         <div className="container text-center mt-5" data-aos="fade-up">
-          <div class="section-title">
+          <div className="section-title">
             <h2 style={{ color: "red" }}>Our Team</h2>
           </div>
 

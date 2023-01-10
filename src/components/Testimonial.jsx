@@ -37,9 +37,9 @@ const Testimonial = () => {
   };
   return (
     <>
-      <section id="testimonials" class="testimonials" style={{backgroundColor:'black'}}>
-        <div class="container " data-aos="fade-up">
-          <div class="section-title">
+      <section id="testimonials" className="testimonials" style={{backgroundColor:'black'}}>
+        <div className="container " data-aos="fade-up">
+          <div className="section-title">
             <h2> <span style={{color:'white'}}>TOP</span> TEDx TALKS</h2>
           </div>
           <div className="p-md-0 p-3">

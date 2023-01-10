@@ -20,7 +20,7 @@ const About = () => {
           <div className="row text-center "><h1 className="">About TED</h1></div>
           <div className="row my-5">
             <div className="col-md-6">
-              <p class="">
+              <p className="">
                 TED is a nonprofit organization devoted to Ideas Worth
                 Spreading. Started as a four-day conference in California 30
                 years ago, TED has grown to support its mission with multiple
@@ -32,7 +32,7 @@ const About = () => {
                 Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman.
               </p>
             </div>
-            <div className="col-md-6"><img src={about1} class="img-fluid" alt="" /></div>
+            <div className="col-md-6"><img src={about1} className="img-fluid" alt="" /></div>
           </div>
         </div>
 

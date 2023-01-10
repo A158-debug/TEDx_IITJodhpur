@@ -18,12 +18,12 @@ const Footer = () => {
   return (
     <>
       <footer id="footer">
-        <div class="footer-top">
-          <div class="container ">
-            <div class="row ">
-              <a href="./" class="text-center">
-                <img src={logo} class="img-fluid footer-logo" alt="logo"></img>
-                <p class="text-white" style={{ fontSize: "10px", margin: "0px" }}>
+        <div className="footer-top">
+          <div className="container ">
+            <div className="row ">
+              <a href="./" className="text-center">
+                <img src={logo} className="img-fluid footer-logo" alt="logo"></img>
+                <p className="text-white" style={{ fontSize: "10px", margin: "0px" }}>
                   x= independently organized <span style={{ color: "red" }}> TED </span>event
                 </p>
               </a>
@@ -41,11 +41,11 @@ const Footer = () => {
 
             {/* ------ footer icons -------- */}
             <div className="row text-center social-links ">
-              {/* <a href="./" class="twitter"><i class="bx bxl-twitter"></i></a> */}
-              <a href="./" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="https://www.instagram.com/tedxiitjodhpur/" target="_blank" rel="noreferrer" class="instagram"><i class="bx bxl-instagram"></i></a>
-              {/* <a href="./" class="google-plus"><i class="bx bxl-skype"></i></a> */}
-              <a href="https://www.linkedin.com/company/tedx-iitjodhpur/" target="_blank" rel="noreferrer" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              {/* <a href="./" className="twitter"><i className="bx bxl-twitter"></i></a> */}
+              <a href="./" className="facebook"><i className="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/tedxiitjodhpur/" target="_blank" rel="noreferrer" className="instagram"><i className="bx bxl-instagram"></i></a>
+              {/* <a href="./" className="google-plus"><i className="bx bxl-skype"></i></a> */}
+              <a href="https://www.linkedin.com/company/tedx-iitjodhpur/" target="_blank" rel="noreferrer" className="linkedin"><i className="bx bxl-linkedin"></i></a>
             </div>
             <div className="row mt-5 text-center footer-text">
               <p style={{ color: "grey" }}>© 2022 <span style={{color: "red" }}> TEDXIIT</span><span > JODHPUR</span>. THIS INDEPENDENT TEDX EVENT IS OPERATED UNDER LICENCE FROM TED   |  <span >TERMS & CONDITIONS  </span>  |  <span > ACCESSIBILITY</span></p>
@@ -54,15 +54,15 @@ const Footer = () => {
         </div>
 
        {/* ------copyright portion -------- */}
-        <div class="container flex py-4 ">
-          <div class="me-md-auto text-center text-md-star ">
-            <div class="copyright">
+        <div className="container flex py-4 ">
+          <div className="me-md-auto text-center text-md-star ">
+            <div className="copyright">
               &copy; Copyright <strong><span>TED<sup>x</sup>IIT Jodhpur</span></strong>
             </div>
-            <div class="text-center">Designed by <Link to="./"> TED<sup>x</sup>IIT Jodhpur</Link></div>
+            <div className="text-center">Designed by <Link to="./"> TED<sup>x</sup>IIT Jodhpur</Link></div>
           </div>
         </div>
-        <button onClick={scrollToTop} className="back-to-top" style={{display: visible ? 'inline' : 'none'}}><i class="bi bi-arrow-up-short"></i></button>
+        <button onClick={scrollToTop} className="back-to-top" style={{display: visible ? 'inline' : 'none'}}><i className="bi bi-arrow-up-short"></i></button>
       </footer>
     </>
   );

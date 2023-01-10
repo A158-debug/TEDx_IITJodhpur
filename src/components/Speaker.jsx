@@ -20,35 +20,35 @@ const Speaker = () => {
   }, [])
   return (
     <>
-    <section id="team" class="team mt-5">
-        <div class="container">
-          <div class="section-title">
+    <section id="team" className="team mt-5">
+        <div className="container">
+          <div className="section-title">
             <h2 className=''>
-             <span class="text-white">  OUR</span>  SPEAKERS
+             <span className="text-white">  OUR</span>  SPEAKERS
             </h2>
           </div>
-          <div class="row justify-content-center p-5">
+          <div className="row justify-content-center p-5">
             {speaker_card.map((e) => (
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member">
-                  <div class="member-img">
-                    <img src={team5} class="img-fluid" alt="" />
-                    {/* <div class="social">
+              <div className="col-lg-3 col-md-6 d-flex align-items-stretch" key={e.id}>
+                <div className="member">
+                  <div className="member-img">
+                    <img src={team5} className="img-fluid" alt="" />
+                    {/* <div className="social">
                       <a href="./">
-                        <i class="bi bi-twitter"></i>
+                        <i className="bi bi-twitter"></i>
                       </a>
                       <a href="./">
-                        <i class="bi bi-facebook"></i>
+                        <i className="bi bi-facebook"></i>
                       </a>
                       <a href="./">
-                        <i class="bi bi-instagram"></i>
+                        <i className="bi bi-instagram"></i>
                       </a>
                       <a href="./">
-                        <i class="bi bi-linkedin"></i>
+                        <i className="bi bi-linkedin"></i>
                       </a>
                     </div> */}
                   </div>
-                  <div class="member-info">      
+                  <div className="member-info">      
                     <h4 className="text-center">{e.name}</h4>
                     {/* <span>{e.position}</span> */}
                   </div>

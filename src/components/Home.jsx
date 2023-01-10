@@ -7,14 +7,14 @@ import Testimonial from "./Testimonial";
 import Theme from "./Theme";
 
 const Home = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0)
-  // }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
-      <section id="hero" class="d-flex align-items-center">
-        <div class="container" data-aos="zoom-out" data-aos-delay="80">
-          <div class="row text-center">
+      <section id="hero" className="d-flex align-items-center">
+        <div className="container" data-aos="zoom-out" data-aos-delay="80">
+          <div className="row text-center">
             <h1>THE NEW DIMENSION</h1>
           </div>
         </div>
@@ -52,7 +52,7 @@ const Home = () => {
               <div className="mb-md-5 mb-0">
                 <h1 >THE NEW DIMENSION <br/> JANUARY 19th, 2023</h1>
                 <div className="">
-                  <a href="./" target="_blank" class="get-started-btn scrollto p-3 ">GET TICKETS <i class="bi bi-arrow-right"></i></a>
+                  <a href="./" target="_blank" className="get-started-btn scrollto p-3 ">GET TICKETS <i className="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -63,10 +63,10 @@ const Home = () => {
       <Theme/>
 
       {/*----------------Reason to be partner with us -------------------*/}
-      <section id="about" class="about section-bg mb-5">
-        <div class="container partner_reason" data-aos="fade-up">
-          <div class="row">
-            <div class="content ">
+      <section id="about" className="about section-bg mb-5">
+        <div className="container partner_reason" data-aos="fade-up">
+          <div className="row">
+            <div className="content ">
                 <h3>This is <span style={{color: "red"}}>  How We do It </span></h3>
                 <p>
                   We are looking for speakers or performers who have radically
@@ -77,14 +77,14 @@ const Home = () => {
             </div>
           </div>
           <div className="row">
-            <div class="icon-boxes d-flex flex-column justify-content-center">
-              <div class="row">
+            <div className="icon-boxes d-flex flex-column justify-content-center">
+              <div className="row">
                 <div
-                  class="col-md-4 icon-box"
+                  className="col-md-4 icon-box"
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >
-                  <i class="bx bx-receipt"></i>
+                  <i className="bx bx-receipt"></i>
                   <h4>Events</h4>
                   <p>
                     Our mission is to inspire and inform by unleashing hidden,
@@ -95,11 +95,11 @@ const Home = () => {
                   </p>
                 </div>
                 <div
-                  class="col-md-4 icon-box"
+                  className="col-md-4 icon-box"
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
-                  <i class="bx bx-cube-alt"></i>
+                  <i className="bx bx-cube-alt"></i>
                   <h4>Community</h4>
                   <p>
                     TEDxIIT Jodhpur is a globally-minded local community,
@@ -110,11 +110,11 @@ const Home = () => {
                   </p>
                 </div>
                 <div
-                  class="col-md-4 icon-box"
+                  className="col-md-4 icon-box"
                   data-aos="fade-up"
                   data-aos-delay="300"
                 >
-                  <i class="bx bx-images"></i>
+                  <i className="bx bx-images"></i>
                   <h4>Online</h4>
                   <p>
                     Long enough to explore a challenging perspective but short
