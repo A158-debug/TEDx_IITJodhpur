@@ -1,29 +1,35 @@
 import React,{useEffect} from "react";
 
-import Abhishek from "../assets/img/team/AbhishekKumar.png";
-import Deepika from "../assets/img/team/DeepikaGupta.png";
+// import Abhishek from "../assets/img/team/AbhishekKumar.png";
+import Abhishek from "../assets/img/team/Abhishek1.png";
+// import Deepika from "../assets/img/team/DeepikaGupta.png";
+import Deepika from "../assets/img/team/Deepika1.jpeg";
 import Dheemant from "../assets/img/team/Dheemant.png";
 import Harshit from "../assets/img/team/Harshit.png";
 import Inder from "../assets/img/team/Indermohan.png";
-import Kartik from "../assets/img/team/Kartik.png";
+// import Kartik from "../assets/img/team/Kartik.png";
+import Kartik from "../assets/img/team/Kartik1.jpeg";
 import Prachiti from "../assets/img/team/Prachiti.png";
-import Shivangi from "../assets/img/team/Shivangi.png";
+// import Shivangi from "../assets/img/team/Shivangi.png";
+import Shivangi from "../assets/img/team/Shivangi1.jpeg";
 import Yash from "../assets/img/team/Yash.png";
 import Chakshu from "../assets/img/team/Chakshu.png";
 import Aman from "../assets/img/team/Aman.png";
+import Anuj from "../assets/img/team/Anuj.jpeg";
 
 const Team_cards = [
-  { img: Kartik, name: "Kartik Choudhary", info: "ORGANIZER", id: 6 },
-  { img: Yash, name: "Yash Ruhatiya", info: "CO-ORGANIZER", id: 9 },
-  { img: Abhishek, name: "Abhishek Kumar", info: "HEAD WEB DEVELOPMENT", id: 1},
-  { img: Deepika, name: "Deepika Gupta", info: "HEAD MARKETING", id: 2 },
-  { img: Dheemant, name: "Dheemant J", info: "HEAD MARKETING", id: 3 },
-  { img: Harshit, name: "Harshit Makhijani", info: "HEAD LOGISTICS", id: 4 },
-  { img: Inder, name: "InderMohan Kaur", info: "HEAD MARKETING", id: 5 },
-  { img: Prachiti, name: "Prachiti Dad", info: "HEAD DESIGN AND CREATIVITY", id: 7},
-  { img: Shivangi, name: "Shivangi Madhavi", info: "HEAD CURATOR", id: 8 },
-  { img: Aman, name: "Aman Thakur", info: "HEAD CURATOR", id: 10 },
-  { img: Chakshu, name: "Chakshu Dhannawat", info: "HEAD LOGISTICS", id: 11 },
+  { img: Anuj, name: "Anuj Kapoor", info: "FACULTY ADVISOR", id: 1 },
+  { img: Kartik, name: "Kartik Choudhary", info: "ORGANIZER", id: 2 },
+  { img: Yash, name: "Yash Ruhatiya", info: "CO-ORGANIZER", id: 3 },
+  { img: Abhishek, name: "Abhishek Kumar", info: "HEAD WEB DEVELOPMENT", id: 4},
+  { img: Deepika, name: "Deepika Gupta", info: "HEAD MARKETING", id: 5 },
+  { img: Dheemant, name: "Dheemant J", info: "HEAD MARKETING", id: 6 },
+  { img: Harshit, name: "Harshit Makhijani", info: "HEAD LOGISTICS", id: 7 },
+  { img: Inder, name: "InderMohan Kaur", info: "HEAD MARKETING", id: 8 },
+  { img: Prachiti, name: "Prachiti Dad", info: "HEAD DESIGN AND CREATIVITY", id: 9},
+  { img: Shivangi, name: "Shivangi Madhavi", info: "HEAD CURATOR", id: 10 },
+  { img: Aman, name: "Aman Thakur", info: "HEAD CURATOR", id: 11 },
+  { img: Chakshu, name: "Chakshu Dhannawat", info: "HEAD LOGISTICS", id: 12 },
 ];
 
 const Team = () => {
@@ -51,9 +57,9 @@ const Team = () => {
             <h2 style={{ color: "red" }}>Our Team</h2>
           </div>
 
-          <div className="row team-img" data-aos="fade-up" data-aos-delay="200">
+          <div className="row team-img " data-aos="fade-up" data-aos-delay="200">
             {Team_cards.map((e) => (
-              <div className="col mb-5">
+              <div className="col-sm-6 col-md-4 col-lg-3 mb-5">
                 <img src={e.img} alt="" />
                 <p className="head-name">{e.name}</p>
                 <p className="head-designation">{e.info}</p>

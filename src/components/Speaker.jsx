@@ -6,7 +6,7 @@ import team4 from "../assets/img/speakers/team-4.jpg";
 import team5 from "../assets/img/speakers/team-5.jpg";
 
 const speaker_card = [
-  { img: team3, id: 3, name: "Founder of Military Official", position: "CTO" },
+  { img: team3, id: 3, name: "Government Official", position: "CTO" },
   { img: team4, id: 4, name: "Cricketer", position: "Accountant" },
   { img: team1, id: 5, name: "Academia", position: "Chief Executive Officer", },
   { img: team2, id: 6, name: "Actor", position: "Product Manager" },

@@ -50,14 +50,10 @@ const Contact = () => {
                     <i className="bx bx-phone-call"></i>
                     <h3  className="text-white">Call Us</h3>
                     <p>
-                      +91 9805397585 
-                      {/* <br/>
-                      Kartik : Organizer */}
+                    Organizer Kartik : +91 9805397585   
                       </p>
                     <p>
-                      +91 9529107219   
-                      {/* <br />
-                     shivangi : Curator */}
+                    Curator Shivangi :  +91 9529107219  
                      </p>
                   </div>
                 </div>
