@@ -24,7 +24,7 @@ const App = () => {
 
   useEffect(() => {
     setSpinner(true);
-    setTimeout(() => setSpinner(false), 3000)
+    setTimeout(() => setSpinner(false), 3500)
   }, []);
 
 
