@@ -1,19 +1,36 @@
 .event__section h1{
     font-weight: 500;
     line-height: 90px;
-    font-size: 90px;
+    font-size: 100px;
     letter-spacing: 1px;
     font-family: Oswald;
-    margin-bottom: 30px;
-    color: red;
-    
+    /* margin-bottom: 30px; */
+    color: red;   
 }
+.event__section_heading span{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .event__section h1{
+        font-size: 50px; 
+    }
+    .event__section h2{
+        font-size: 18px; 
+        padding: 0;
+    }
+
+  }
 .event__section_heading{
-    background: radial-gradient(
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    background-image: radial-gradient(
         140% 140% at 0% 0%,
         rgba(255, 255, 255, 0.4) 0%,
         rgba(255, 255, 255, 0) 100%
-      ),url('../../assets/img/Event/Event01.jpg');
+      ),url('../../assets/img/Event/Event04.jpg');
 }
 
 .event__section_rules li {
@@ -32,5 +49,5 @@
         140% 140% at 0% 0%,
         rgba(255, 255, 255, 0.4) 0%,
         rgba(255, 255, 255, 0) 100%
-      ),url('../../assets/img/Event/Event02.jpg');
+      ),url('../../assets/img/Event/Event03.jpg');
  }  */
