@@ -1,0 +1,36 @@
+.event__section h1{
+    font-weight: 500;
+    line-height: 90px;
+    font-size: 90px;
+    letter-spacing: 1px;
+    font-family: Oswald;
+    margin-bottom: 30px;
+    color: red;
+    
+}
+.event__section_heading{
+    background: radial-gradient(
+        140% 140% at 0% 0%,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),url('../../assets/img/Event/Event01.jpg');
+}
+
+.event__section_rules li {
+    font-size: 1rem;
+    font-family: Montserrat;
+    padding: 2px;
+  }
+  
+
+ /* .event__section{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background: radial-gradient(
+        140% 140% at 0% 0%,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),url('../../assets/img/Event/Event02.jpg');
+ }  */

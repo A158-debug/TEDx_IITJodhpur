@@ -56,7 +56,7 @@ const Navbar = () => {
                   <li  onClick={ToggleButton}> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfemXEg95_e8vxkKPfuepGxiYN2HekYMS-vvAW8e5YpOWrcHg/viewform" target="_blank" rel="noreferrer">Apply To Speak</a></li>
                 </ul>  
             </li>
-              {/* <li onClick={ToggleButton}><Link className="nav-link scrollto" to="./">Events</Link></li> */}
+              <li onClick={ToggleButton}><Link className="nav-link scrollto" to="./events">Events</Link></li>
               <li onClick={ToggleButton}><HashLink className="nav-link scrollto" to="/#contact">Contact us</HashLink></li>
             </ul>
             <i className="bi bi-list mobile-nav-toggle" onClick={onToggle} id="toggle-button"></i>

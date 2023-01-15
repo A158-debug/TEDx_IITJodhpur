@@ -6,11 +6,13 @@ import team4 from "../assets/img/speakers/team-4.jpg";
 import team5 from "../assets/img/speakers/team-5.jpg";
 
 const speaker_card = [
-  { img: team3, id: 3, name: "IAS Officer", position: "CTO" },
-  { img: team1, id: 5, name: "Tech Entrepreneur", position: "Chief Executive Officer", },
-  { img: team2, id: 6, name: "Academia", position: "Product Manager" },
-  { img: team3, id: 7, name: "Climate Activist", position: "CTO" },
-  { img: team4, id: 8, name: "Social Worker", position: "Accountant" },
+  { img: team3, id: 1, name: "Government Official", position: "CTO" },
+  { img: team1, id: 2, name: "CEO and Founder", position: "Chief Executive Officer", },
+  { img: team2, id: 3, name: "Author Poet | Lyricist | Screenwriter", position: "Product Manager" },
+  { img: team3, id: 4, name: "Climate Activist", position: "CTO" },
+  { img: team4, id: 5, name: "Social Worker | Fashion Designer", position: "Accountant" },
+  { img: team4, id: 6, name: "Playback Singer", position: "Accountant" },
+  { img: team4, id: 7, name: "Athlete", position: "Accountant" },
 ];
 
 const Speaker = () => {

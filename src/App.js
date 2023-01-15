@@ -3,7 +3,7 @@ import React, { useState, useEffect, Suspense, lazy } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './components/Home'
-import Theme from './components/Theme'
+import Events from './components/Event/Events'
 import video from './assets/TEDxvideo.mp4'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -30,7 +30,7 @@ const App = () => {
 
   return (
     <>
-      {spinner ? (
+      {/* {spinner ? (
         <>
           <video loop muted autoPlay  id="autovideo" >
             <source src={video} type="video/mp4" />
@@ -47,6 +47,7 @@ const App = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/team" element={<Team />} />
                 <Route path="/speakers" element={<Speakers />} />
+                <Route path="/events" element={<Events />} />
               </Routes>
               </Suspense>
             </main>
@@ -54,8 +55,8 @@ const App = () => {
           </BrowserRouter>
         </>
       )
-      }
-      {/* <BrowserRouter>
+      } */}
+      <BrowserRouter>
         <Navbar />
         <main id="main">
           <Suspense fallback={<Loader/>}>
@@ -64,11 +65,12 @@ const App = () => {
               <Route path="/about" element={<About />} />
               <Route path="/team" element={<Team />} />
               <Route path="/speakers" element={<Speakers />} />
+              <Route path="/events" element={<Events />} />
             </Routes>
           </Suspense>
         </main>
         <Footer />
-      </BrowserRouter> */}
+      </BrowserRouter>
     </>
   )
 }
