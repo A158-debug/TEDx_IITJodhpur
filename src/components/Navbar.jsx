@@ -61,7 +61,7 @@ const Navbar = () => {
             </ul>
             <i className="bi bi-list mobile-nav-toggle" onClick={onToggle} id="toggle-button"></i>
           </nav>
-          <Link to="./" className="get-started-btn scrollto">Get Started</Link>
+          <a href="https://forms.gle/Cf5uTZcrViPhSjuN8" target="_blank" rel="noreferrer" className="get-started-btn scrollto">Get Tickets</a>
         </div>
       </header>
      

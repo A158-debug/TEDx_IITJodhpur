@@ -5,6 +5,7 @@ import home1 from "../assets/img/Home/home1.jpg";
 import CountDown from "./CountDown/CountDown";
 import Testimonial from "./Testimonial";
 import Theme from "./Theme";
+import TimeLine from "./TimeLine";
 
 const Home = () => {
   useEffect(() => {
@@ -52,7 +53,7 @@ const Home = () => {
               <div className="mb-md-5 mb-0">
                 <h1 >THE NEW DIMENSION <br/> JANUARY 19th, 2023</h1>
                 <div className="">
-                  <a href="./" target="_blank" className="get-started-btn scrollto p-3 ">GET TICKETS <i className="bi bi-arrow-right"></i></a>
+                  <a href="https://forms.gle/Cf5uTZcrViPhSjuN8" target="_blank" rel="noreferrer" className="get-started-btn scrollto p-3 ">GET TICKETS <i className="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -141,6 +142,7 @@ const Home = () => {
 
       <Testimonial/>
       <Speaker />
+      <TimeLine/>
 
       <section className="fixed-image mt-5">
         <h1> Be With Us </h1>

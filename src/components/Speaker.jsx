@@ -1,18 +1,21 @@
 import React,{useEffect} from 'react'
-import team1 from "../assets/img/speakers/team-1.jpg";
-import team2 from "../assets/img/speakers/team-2.jpg";
-import team3 from "../assets/img/speakers/team-3.jpg";
-import team4 from "../assets/img/speakers/team-4.jpg";
-import team5 from "../assets/img/speakers/team-5.jpg";
-
+import Abhishek from '../../src/assets/img/speakers/Abhishek_Surana.jpeg'
+import Akshat from '../../src/assets/img/speakers/Akshat_Gupta.jpeg'
+import Aman from '../../src/assets/img/speakers/Aman_Goel.png'
+import Kiran from '../../src/assets/img/speakers/Kiran_Verma.jpeg'
+import Kuldeep from '../../src/assets/img/speakers/Kuldeep_Singh.jpeg'
+import Licypriya from '../../src/assets/img/speakers/Licypriya_Kangujam.jpeg'
+import Ruman from '../../src/assets/img/speakers/Ruma_Devi.jpeg'
+import Rahul from '../../src/assets/img/speakers/Rahul.jpeg'
 const speaker_card = [
-  { img: team3, id: 1, name: "Government Official", position: "CTO" },
-  { img: team1, id: 2, name: "CEO and Founder", position: "Chief Executive Officer", },
-  { img: team2, id: 3, name: "Author Poet | Lyricist | Screenwriter", position: "Product Manager" },
-  { img: team3, id: 4, name: "Climate Activist", position: "CTO" },
-  { img: team4, id: 5, name: "Social Worker | Fashion Designer", position: "Accountant" },
-  { img: team4, id: 6, name: "Playback Singer", position: "Accountant" },
-  { img: team4, id: 7, name: "Athlete", position: "Accountant" },
+  { img: Licypriya, id: 1, name: "Licypriya Kangujam ", position: "India's Youngest Climate Activist" },
+  { img: Akshat, id: 2, name: "Akshat Gupta", position: "Author, Poet, Lyricist, Screenwriter", },
+  { img: Aman, id: 3, name: "Aman Goel ", position: "CEO & Co-founder Cogno AI,Angel Investor" },
+  { img: Kuldeep, id: 4, name: "Dr. Kuldeep Singh", position: "Public Health Expert Dean Academics, AIIMS Jodhpur" },
+  { img: Ruman, id: 5, name: "Ruma Devi", position: "Social Activist -Recipient of Highest Civilian Honour for Women in India, Nari Shakti Puraskar" },
+  { img: Kiran, id: 6, name: "Kiran Verma", position: "Community Leader and Change Maker - Founder Simply Blood" },
+  { img: Abhishek, id: 7, name: "Abhishek Surana", position: "IAS CEO, Zila Parishad Jodhpur" },
+  { img: Rahul, id: 8, name: "Rahul Chaudhari", position: "Indian International Kabaddi Player" },
 ];
 
 const Speaker = () => {
@@ -33,25 +36,11 @@ const Speaker = () => {
               <div className="col-lg-3 col-md-6 d-flex align-items-stretch" key={e.id}>
                 <div className="member">
                   <div className="member-img">
-                    <img src={team5} className="img-fluid" alt="" />
-                    {/* <div className="social">
-                      <a href="./">
-                        <i className="bi bi-twitter"></i>
-                      </a>
-                      <a href="./">
-                        <i className="bi bi-facebook"></i>
-                      </a>
-                      <a href="./">
-                        <i className="bi bi-instagram"></i>
-                      </a>
-                      <a href="./">
-                        <i className="bi bi-linkedin"></i>
-                      </a>
-                    </div> */}
+                    <img src={e.img} className="img-fluid" alt="" />
                   </div>
                   <div className="member-info">      
                     <h4 className="text-center">{e.name}</h4>
-                    {/* <span>{e.position}</span> */}
+                    <span className="text-center">{e.position}</span>
                   </div>
                 </div>
               </div>

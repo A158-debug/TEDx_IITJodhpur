@@ -1135,7 +1135,6 @@ section {
   border-radius: 5px;
   transform: scale(1);
   cursor: pointer;
-
 }
 
 .team-img .head-name {
@@ -1339,6 +1338,14 @@ section {
   overflow: hidden;
   border-radius: 5px;
   background: #fff;
+}
+.team .member img {
+  height: 280px;
+  width: 280px;
+  object-fit: cover;
+  /* margin: 5px; */
+  /* border-radius: 5px; */
+  transform: scale(1);
   cursor: pointer;
 }
 
