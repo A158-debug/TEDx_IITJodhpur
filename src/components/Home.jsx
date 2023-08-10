@@ -27,7 +27,7 @@ const Home = () => {
             <div className="theme__section">
               <h1> HELLO <span className="text-white">STRANGER</span></h1>
               <p style={{ color: "#ffffffcc" }}> Are you ready to unravel the unexplored? </p>
-              <CountDown deadline="January, 19, 2023" />
+{/*               <CountDown deadline="January, 19, 2023" /> */}
               <p className="p-md-5 p-0">
                 To unlock the untapped opportunities and experience an
                 unrestricted rush ? As the new level enters play, there is a
